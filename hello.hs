@@ -1,13 +1,20 @@
-main = putStrLn myhtml
+main = 
+    putStrLn myhtml
 
-myhtml = makeHtml "Hello title" "Hello, world!"
+myhtml = 
+    makeHtml "Hello title" "Hello, world!"
 
-makeHtml title content = html_ (head_ (title_ title) <> body_ content)
+makeHtml title content = 
+    html_ (head_ (title_ title) <> body_ content)
 
-html_ content = "<html>" <> content <> "</html>"
+html_ content = 
+    "<html>" <> content <> "</html>"
    
-body_ content = "<body>" <> content <> "</body>"
+body_ content = 
+    "<body>" <> content <> "</body>"
 
-head_ content = "<head>" <> content <> "</head>"
+head_ content = 
+    "<head>" <> content <> "</head>"
 
-title_ content = "<title>" <> content <> "</title>"
+title_ content = 
+    "<title>" <> content <> "</title>"
